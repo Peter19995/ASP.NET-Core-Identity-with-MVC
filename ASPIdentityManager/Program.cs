@@ -36,12 +36,12 @@ builder.Services.Configure<IdentityOptions>(opt =>
 builder.Services.AddAuthentication().
     AddFacebook(options =>
 {
-    options.AppId = "1311305543134356";
-    options.AppSecret = "e568b3b3873e047d4c46c36560b0da1e";
+    options.AppId = "<YOUR API KEY>";
+    options.AppSecret = "<YOUR SECRET KEY>";
 }).AddGoogle(options =>  
 {
-    options.ClientId = "822367868054-6sepboso2uepvqnf6jemf0b4ig78jfhs.apps.googleusercontent.com";
-    options.ClientSecret = "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";
+    options.ClientId = "<YOUR API KEY>";
+    options.ClientSecret = "<YOUR SECRET KEY>";
 });
 
 builder.Services.AddAuthorization(options =>
